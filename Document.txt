@@ -1,0 +1,60 @@
+Project: GitHub Stars - Most Starred Repositories Viewer/Etiqa-Test
+
+1. src/App.jsx
+   - Main application component
+   - Wraps the entire application with necessary providers (ThemeProvider, GithubProvider)
+   - Renders the main layout including header, RepoListContainer, and ScrollToTopArrow
+
+2. src/components/RepoListContainer.jsx
+   - Container component for displaying the list of repositories
+   - Manages fetching repositories and implements infinite scrolling
+   - Renders individual RepoItem components and loading states
+
+3. src/components/RepoItem.jsx
+   - Represents a single repository item
+   - Displays repository information including name, description, owner, and stats
+   - Implements hover animations and styling for both light and dark modes
+
+4. src/components/LoadingSpinner.jsx
+   - Displays a colorful loading spinner
+   - Uses Framer Motion for rotation animation
+   - Visible when loading more repositories or during initial load
+
+5. src/components/ScrollToTopArrow.jsx
+   - Displays a scroll-to-top arrow when the user scrolls down the page
+   - Appears after scrolling past a certain point (300px)
+   - Smoothly scrolls the page to the top when clicked
+
+6. src/components/ThemeToggle.jsx
+   - Renders a toggle button for switching between light and dark modes
+   - Uses the ThemeContext to manage theme state
+
+7. src/components/ErrorBoundary.jsx
+   - React error boundary component
+   - Catches and displays errors that occur within its child components
+   - Prevents the entire application from crashing due to component errors
+
+8. src/context/GithubContext.jsx
+   - Provides a context for managing GitHub repository data
+   - Implements functions for fetching repositories and managing pagination
+   - Handles caching of repository data to reduce API calls
+
+9. src/context/ThemeContext.jsx
+   - Manages the application's theme state (light/dark mode)
+   - Provides functions to toggle theme and persists theme preference
+
+10. src/utils/cache.js
+    - Utility functions for caching repository data
+    - Implements functions to save, retrieve, and clear cached data
+
+11. src/index.css
+    - Global styles for the application
+    - Imports Tailwind CSS and sets up base styles including dark mode
+
+12. tailwind.config.js
+    - Configuration file for Tailwind CSS
+    - Sets up theme extensions, animations, and enables dark mode
+
+This project is a React application that displays the most starred GitHub repositories from the last 10 days. 
+It features infinite scrolling, responsive design, dark mode support, and client-side caching to improve performance and reduce API calls.
+
