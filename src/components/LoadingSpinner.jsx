@@ -4,7 +4,7 @@ function LoadingSpinner() {
   return (
     <div className="flex justify-center items-center">
       <motion.div
-        className="w-16 h-16 rounded-full border-4 border-t-transparent border-b-transparent relative"
+        className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-t-transparent border-b-transparent relative"
         style={{
           borderLeftColor: "#8B5CF6",
           borderRightColor: "#EC4899",
