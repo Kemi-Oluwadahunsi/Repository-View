@@ -20,7 +20,7 @@ function AppContent() {
           <header className=" bg-opacity-10 dark:bg-gray-800 dark:bg-opacity-30 py-6 shadow-xl">
             <div className="container mx-auto px-4 flex justify-between items-center">
               <h1 className="sm:text-lg lg:text-3xl font-bold text-center text-white/85 dark:text-gray-500">
-                Most Starred GitHub Repos (Last 10 Days)
+                Most Starred GitHub Repos
               </h1>
               <ThemeToggle />
             </div>

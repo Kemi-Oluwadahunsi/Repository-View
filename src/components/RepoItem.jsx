@@ -56,13 +56,13 @@ function RepoItem({ repo }) {
             </p>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <motion.div
               className="flex items-center text-yellow-500"
               whileHover={{ scale: 1.1 }}
             >
-              <Star className="w-4 h-4 mr-1" />
-              <span className="text-sm font-bold">
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+              <span className="text-xs sm:text-sm font-bold">
                 {repo.stargazers_count.toLocaleString()}
               </span>
             </motion.div>
@@ -70,8 +70,8 @@ function RepoItem({ repo }) {
               className="flex items-center text-blue-500"
               whileHover={{ scale: 1.1 }}
             >
-              <GitFork className="w-4 h-4 mr-1" />
-              <span className="text-sm font-bold">
+              <GitFork className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+              <span className="text-xs sm:text-sm font-bold">
                 {repo.forks_count.toLocaleString()}
               </span>
             </motion.div>
@@ -79,8 +79,8 @@ function RepoItem({ repo }) {
               className="flex items-center text-green-500"
               whileHover={{ scale: 1.1 }}
             >
-              <Eye className="w-4 h-4 mr-1" />
-              <span className="text-sm font-bold">
+              <Eye className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+              <span className="text-xs sm:text-sm font-bold">
                 {repo.watchers_count.toLocaleString()}
               </span>
             </motion.div>

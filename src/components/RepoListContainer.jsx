@@ -33,12 +33,12 @@ function RepoListContainer() {
   return (
     <div className="space-y-4 lg:space-y-6 px-2 sm:px-8 lg:px-12">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-[#46e0e5] dark:text-[#167c88]">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#46e0e5] dark:text-[#167c88]">
           GitHub Repositories
         </h2>
         <button
           onClick={refreshRepos}
-          className="bg-indigo-500 hover:bg-indigo-700 dark:bg-[#2c276e] text-white dark:text-white/70 font-bold py-2 px-4 rounded"
+          className="bg-indigo-500 hover:bg-indigo-700 dark:bg-[#2c276e] text-white dark:text-white/70 text-[0.9em] sm:text-base font-bold py-2 px-4 rounded"
         >
           Refresh
         </button>
