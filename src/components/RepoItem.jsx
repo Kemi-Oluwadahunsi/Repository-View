@@ -14,7 +14,7 @@ function RepoItem({ repo }) {
           transition: { duration: 0.3 },
         },
       }}
-      className="bg-white dark:bg-[#333b47] px-2 sm:px-4 py-2 sm:py-4 h-[11rem] rounded-lg shadow-md overflow-hidden transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="bg-white dark:bg-[#333b47] px-2 sm:px-4 py-2 sm:py-4 h-[10rem] sm:h-[12rem] rounded-lg shadow-md overflow-hidden transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
     >
       <motion.div
         variants={{
@@ -40,7 +40,7 @@ function RepoItem({ repo }) {
           </motion.a>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base line-clamp-1 ">
+        <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base line-clamp-2 ">
           {repo.description || "No Description for this Repository"}
         </p>
 
