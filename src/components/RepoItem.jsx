@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { Star, GitFork, Eye, ExternalLink } from "lucide-react";
 
-function RepoItem({ repo }) {
+const RepoItem = ({ repo }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

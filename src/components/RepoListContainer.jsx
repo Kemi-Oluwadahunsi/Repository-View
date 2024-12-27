@@ -3,7 +3,7 @@ import { useGithubContext } from "../context/GithubContext";
 import LoadingSpinner from "./LoadingSpinner";
 import RepoItem from "./RepoItem";
 
-function RepoListContainer() {
+const RepoListContainer = () => {
   const { repos, loading, error, hasMore, fetchRepos, refreshRepos } =
     useGithubContext();
   const observer = useRef();

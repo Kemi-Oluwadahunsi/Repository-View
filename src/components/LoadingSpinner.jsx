@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function LoadingSpinner() {
+const LoadingSpinner = () => {
   return (
     <div className="flex justify-center items-center">
       <motion.div
